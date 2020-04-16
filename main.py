@@ -110,10 +110,6 @@ while True:
                         person_TS['person_'+str(track.track_id)]=[]
                     
                     person_TS['person_'+str(track.track_id)].append(person_dict[i])
-                        #cv2.putText(frame, 'T',(int(bbox[0]), int(bbox[1])),0, 5e-3 * 200, (0,255,0),2)
-
-#                    for j in person_dict[i].keys():
-#                        cv2.putText(frame,str(track.track_id),(person_dict[i][j][0],person_dict[i][j][1]),fontFace=cv2.FONT_HERSHEY_PLAIN,fontScale=1,color=(255,255,255),thickness=1)
                     flag=1
                     break
             if flag==1:
@@ -138,9 +134,6 @@ while True:
                 color=(0,255,0)
                 
             cv2.rectangle(frame,(int(bbox[0]),int(bbox[1])),(int(bbox[2]),int(bbox[3])),color,2)
-            #cv2.putText(frame, str(track.track_id),(int(bbox[0]), int(bbox[1])),0,5e-3 * 200,color,2)
-            
-            #print(track.track_id,labels[track.track_id])
             
         frame_index+=1
             
@@ -157,4 +150,3 @@ while True:
 video_capture.release()
 if writeVideo_flag:
     out.release()
-    # cv2.destroyAllWindows()
