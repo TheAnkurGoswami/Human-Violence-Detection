@@ -1,7 +1,7 @@
 numpy==1.16.4
 scipy==1.2.1
 confiqobj==5.0.6
-pillow==6.1.0
+pillow==8.1.1
 matplotlib==3.1.0
 opencv-contrib-python==4.1.0.25
 scikit-learn==0.21.2
